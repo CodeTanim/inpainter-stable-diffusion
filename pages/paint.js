@@ -86,6 +86,7 @@ export default function Home() {
       <main className="container mx-auto p-5 bg-gray-900 text-white"> 
         {error && <div className="bg-red-700 p-3">{error}</div>} {/* Error styling */}
   
+      <div className="text-white">
         <div className="border-hairline max-w-[512px] mx-auto relative bg-gray-800 border-gray-600"> {/* Dark theme for the image input area */}
           <Dropzone
             onImageDropped={setUserUploadedImage}
@@ -103,6 +104,8 @@ export default function Home() {
             />
           </div>
         </div>
+
+      </div>
   
         <div className="max-w-[512px] mx-auto">
           <PromptForm onSubmit={handleSubmit} />
