@@ -12,9 +12,7 @@ export default function About() {
       <p className="pb-5 text-lg">
         <strong>Inpainting</strong> is a process where missing parts of an
         artwork are filled in to present a complete image. This{" "}
-        <a className="underline" href="https://github.com/zeke/inpainter">
-          open-source demo
-        </a>{" "}
+
         uses the{" "}
         <a
           className="underline"
@@ -29,11 +27,7 @@ export default function About() {
         to inpaint images right in your browser.
       </p>
 
-      <Link href="/paint">
-        <video autoPlay loop muted playsInline className="w-full cursor-pointer">
-          <source src="/cherries-oranges-bananas.mp4" />
-        </video>
-      </Link>
+
 
       {/* <ol className="list-decimal pl-5">
         <li className="mb-2">

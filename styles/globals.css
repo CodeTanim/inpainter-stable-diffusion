@@ -2,27 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-gray-900; /* Setting a dark background for the entire page */
+}
+
 input {
   @apply border;
   @apply border-solid;
-  @apply border-gray-300;
+  @apply border-gray-600; 
   /* @apply rounded-md; */
   @apply px-4;
   @apply py-2;
+  @apply bg-gray-800; /* Dark background for input */
+  @apply text-white; /* Light text for better readability */
 }
 
 .border-hairline {
-  @apply border border-black border-opacity-10;
+  @apply border border-white border-opacity-25;
 }
 
 .lil-button {
   @apply inline-block;
   /* @apply border-hairline; */
   @apply text-sm;
-  @apply text-gray-500;
+  @apply text-gray-300;
   @apply rounded-md;
   @apply py-2;
   @apply mx-3;
+  background-color: rgb(60, 58, 58); /* Dark background for buttons */
 }
 
 .icon {
@@ -30,4 +37,5 @@ input {
   top: -0.1em;
   width: 1.1em;
   height: 1.1em;
+  @apply text-gray-300;
 }
